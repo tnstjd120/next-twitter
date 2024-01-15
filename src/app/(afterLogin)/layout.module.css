@@ -1,7 +1,6 @@
 .container {
   width: 100dvw;
   display: flex;
-  background-color: #eee;
 }
 
 .leftAreaWrapper {
@@ -18,13 +17,18 @@
   width: 275px;
   height: inherit;
   position: relative;
-  background-color: #999;
 }
 
 .leftAreaFixed {
   position: fixed;
   width: inherit;
   height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftAreaFixed nav {
+  flex: 1;
 }
 
 .rightAreaWrapper {
@@ -39,7 +43,6 @@
 .rightAreaInner {
   width: 1000px;
   height: inherit;
-  background-color: #555;
   display: flex;
   justify-content: space-between;
 }
@@ -47,13 +50,11 @@
 .rightAreaInner main {
   width: 600px;
   height: 200dvh;
-  background-color: royalblue;
 }
 
-.rightAreaInner article {
+.rightAreaInner aside {
   width: 350px;
   height: inherit;
-  background-color: rosybrown;
   display: flex;
   flex-direction: column;
 }
@@ -93,4 +94,22 @@
 
 .followRecommend h2 {
   padding-bottom: 12px;
+}
+
+.logo {
+  display: inline-block;
+  height: 56px;
+}
+
+.logo h1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1:hover {
+  background-color: rgba(15, 20, 25, 0.1);
 }
